@@ -45,9 +45,9 @@ header .nav__menu-wrap {position: absolute; width: 100%; left:0; }
 .nav-bottom { height: 90px; background-color: rgb(255, 255, 255); line-height: 90px; border-bottom: 1px solid hsl(0deg 0% 87%); font-size: 1rem;} 
 
 
-.test { padding: 0 0 0 290px; } 
-.test > .nav__menu-wrap { visibility: hidden; } 
-.test:hover > .nav__menu-wrap { visibility: visible; } 
+.top-pd { padding: 0 0 0 290px; } 
+.drop-down > .nav__menu-wrap { visibility: hidden; } 
+.drop-down:hover > .nav__menu-wrap { visibility: visible; } 
 .nav-bottom img { vertical-align: middle; } 
 
 /* ========  */
