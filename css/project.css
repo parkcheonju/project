@@ -17,7 +17,7 @@ a { text-decoration: none; color: inherit; }
 .fl-r { float: right; } 
 .fl-clear::after { content: ""; display: block; clear: both; } 
 
-/* ========  */
+/* ===inner=====  */
 
   .inner {
     width: 1240px;
@@ -82,13 +82,26 @@ header .nav__menu-wrap {position: absolute; width: 100%; left:0; }
 .nav__menu-sub li { margin-top: 10px; cursor: pointer; } 
 .nav__menu-sub li:hover { text-decoration: underline; color: blue; } 
 
-/* === section =====  */
-
+/* === body layout =====  */
+body{
+  background: url(../images/bg_gnb.png); ;
+  background-repeat: repeat;
+}
+section{
+  background-image: url(../images/main_bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -300px;
+}
+.help{
+  background-image: url(../images/bg_gnb2.png);
+  background-repeat: no-repeat;
+}
+.help2{
+  background-image: url(../images/bg_gnb3.png);
+  background-repeat: no-repeat;
+}
 /* === banner =====  */
-
-.banner_wrap {
-    background: rgb(8, 19, 167);
-  }
 .banner_top{
     justify-content: space-between
 }
@@ -149,6 +162,9 @@ header .nav__menu-wrap {position: absolute; width: 100%; left:0; }
     text-indent: -9990px;
     background-size: 100%;
 }
+.qr_flex{
+  justify-content: space-between
+}
 .face_qr{
     background-image: url(../images/facebook_qr.jpg);
     background-repeat: no-repeat;
@@ -164,36 +180,112 @@ header .nav__menu-wrap {position: absolute; width: 100%; left:0; }
     background-repeat: no-repeat;
 }
 /*===== menu ======*/
-.menu_wrap {
-    background: rgb(35, 83, 145);
-  }
-.left_box{
-    width: calc(100% -630px);
-    height: 100%;
-    margin-right: 10px;
-    background-color: rgb(119, 38, 38);
-    display: inline-block;
-    border-radius: 3%;
+.box{
+  justify-content: space-between
 }
+.manu_1{
+  width: 300px;
+  height: 380px;
+  display: inline-block;
+  background-color: #3c4968;
+  border-radius: 3%
+}
+.manu_icon{
+  display: inline-block;
+  margin: 22px;
+  width: 65px;
+  height: 65px;
+  margin-right: 3px;
+  border: 1px solid #e1e1e1;
+  border-radius: 50%;
+  vertical-align: middle;
+  background-color: #313c55;
+}
+.manu_icon > a {
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  font-weight: bold;
+}
+.icon_1{
+  background-image: url(../images/manu_icon.png);
+  background-position: -197px -2px;
+}
+.icon_2{
+  background-image: url(../images/manu_icon.png);
+  background-position: -132px -2px;
+}
+.icon_3{
+  background-image: url(../images/manu_icon.png);
+  background-position: 194px -2px;
+}
+.icon_4{
+  background-image: url(../images/manu_icon.png);
+  background-position: -1px -2px; 
+}
+.icon_5{
+  background-image: url(../images/manu_icon.png);
+  background-position: 324px -2px; 
+}
+.icon_6{
+  background-image: url(../images/manu_icon.png);
+  background-position: 519px -2px; 
+}
+.icon_7{
+  background-image: url(../images/manu_icon.png);
+  background-position: 260px -2px;
+}
+.icon_8{
+  background-image: url(../images/manu_icon.png);
+  background-position: 649px -2px;
 
-/*===== content ======*/
-  .content_wrap {
-    background: rgb(29, 31, 148);
-  }
-
-  /*===== program ======*/
-  .program_wrap {
-    background: rgb(37, 64, 138);
-  }
- /*===== logo ======*/
-  .logo_wrap {
-    background: rgb(49, 51, 136);
-  }
-
-
-
-
-/*===== footer ======*/
-  .footer_wrap {
-    background: rgb(61, 89, 131);
-  }
+}/*================================*/
+.box2{
+  width: 620px;
+  height: 380px;
+  display: inline-block;
+  background-image: url(../images/manu_img.jpg);
+  border-radius: 3%
+  
+}
+.box3{
+  width: 300px;
+  height: 380px;
+  display: inline-block;
+  background-image: url(../images/main_bg_rf.png);
+  border-radius: 3%
+}
+/*============== content===============*/
+.box4{
+  width: 1240px;
+  height: 500px;
+  background-color: rgba(89, 243, 192, 0.815);
+  border-radius: 3%
+}
+.box5{
+  width: 1240px;
+  height: 120px;
+  background-color: rgba(128, 255, 0, 0.712);
+  border-radius: 3%
+}
+.box6{
+  width: 1240px;
+  height: 825px;
+  background-color: rgba(245, 245, 220, 0.863);
+  border-radius: 3%
+}
+.box7{
+  height: 76px;
+  display: block;
+}
+.box8{
+  height: 168px;
+  display: block;
+}
+.logo_wrap{
+  background-color: #e1e1e1;
+}
+.footer_wrap{
+  background-color: black;
+}
+#e1e1e1;
