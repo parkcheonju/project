@@ -447,7 +447,7 @@ section {
   height: 380px;
   padding: 30px 25px 0;
   background-image: url(../images/main_bg_rf.png);
-  p background-size: cover;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -461,6 +461,39 @@ section {
   background-size: 142px 50px;
   background-repeat: no-repeat;
   font-size: 0;
+}
+
+.int-pp {
+  display: block;
+  position: absolute;
+  bottom: 91px;
+  right: 0;
+  content: '';
+  width: 173px;
+  height: 236px;
+  background-image: url(../images/main_jyc.png);
+  background-repeat: no-repeat;
+}
+
+.int-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 100%;
+  background: #c3293a;
+}
+
+.int-btn>ul {
+  height: 106px;
+  padding: 20px 0;
+}
+
+.int-btn>ul>li {
+  float: left;
+  position: relative;
+  width: 33.33%;
+  text-align: center;
 }
 
 .int-rf {
@@ -486,7 +519,6 @@ section {
   left: -10px;
   font-size: 12px;
 }
-
 .rf_ul li {
   display: block;
   width: 95px;
@@ -498,7 +530,49 @@ section {
   font-size: 13px;
   margin: 5px;
 }
-
+.int-btn{
+  position: absolute;
+}
+.int-btn ul{
+  position: relative;
+  height: 106px;
+  padding: 20px 0;
+}
+.int-btn ul li{
+  float: left;
+  position: relative;
+  width: 33.33%;
+  text-align: center;
+}
+.int-btn ul li a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+.int-span{
+  display: block;
+  width: 34px;
+  height: 39px;
+  margin: 0 auto 5px;
+  background-image: url(../images/jyc_low.png);
+  background-repeat: no-repeat;
+}
+.int-span_1{
+  background-position: 0 0;
+}
+.int-span_2{
+  background-position: -33px 0;
+}
+.int-span_3{
+  background-position: -67px 0;
+}
+.int-btn p{
+  position: absolute;
+  bottom: -20px;
+  left: 23px;
+}
 /*============== content===============*/
 .box4 {
   width: 1240px;
