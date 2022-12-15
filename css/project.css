@@ -211,7 +211,7 @@ section {
  font-weight: bold; 
  bottom: -25px; 
  } 
-
+ 
 .icon_1 { 
  background-image: url(../images/manu_icon.png); 
  background-position: -197px -2px; 
@@ -244,7 +244,8 @@ section {
  background-image: url(../images/manu_icon.png); 
  background-position: 649px -2px; 
 
- } /*================================*/
+ } 
+ /*================================*/
 .box2 { 
  width: 620px; 
  height: 380px; 
@@ -293,4 +294,3 @@ section {
 .footer_wrap { 
  background-color: black; 
  } 
-#e1e1e1; 
