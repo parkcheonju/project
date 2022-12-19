@@ -815,8 +815,144 @@ body {
 .quickmenu__icon-7::after {
    background-position: -360px 0;
 }
+/* =========== program ============== */
+.program__wrap{
+   width: 1480px;
+   height: 800px;
+   border-radius: 3%;
+   padding: 20px;
+}
+/* =========== program__top ============== */
+.program__top{
+   height: 20%;
+}
+.program__menu{
+   height: 50%;
+   font-size: 0;
+   background-image: url(../images/program_top.png);
+   background-repeat: no-repeat;
+   background-position: 660px 0px;;
+   text-align: center;
+}
+.program__banner{
+   height: 50%;
+   display: flex;
+   justify-content: space-evenly;
+}
+.program_bn-img{
+   width: 165px;
+   height: 70px;
+   background-image: url(../images/program_button.png);
+   background-repeat: no-repeat;
+   font-size: 0;
+}
+/* =========== program__bottom ============== */
+
+.program__bottom{
+   height: 80%;
+   display: flex;
+   justify-content: space-evenly;
+}
+/*========================================*/
+.program__left{
+   width: 24%;
+   height: 100%;
+   display: inline-block;
+   padding: 10px;
+}
+.prgram__lf_top-top{
+   padding: 10px;
+}
+.lf_top-top{
+   width: 100%;
+   height: 100%;
+   background-color: orange;
+   padding: 5px;
+}
+.lf_top-bottom{
+   background-color: lemonchiffon;
+   padding: 5px;
+}
+.lf_top-center{
+   padding: 10px;
+}
+.prgram__lf_top-bottom{
+   padding: 10px;
+   display: flex;
+   justify-content: space-evenly
+}
+
+.prgram__lf_top-center{
+   padding: 10p;
+}
+/*========================================*/
+
+
+.program__lf-top{
+   height: 50%;
+   padding: 10px;
+   border-radius: 3%;
+   background-color: white;
+}
+.program__lf-bottom{
+   height: 50%;
+   padding: 10px;
+   margin-top:  10px;
+   border-radius: 3%;
+   background-color: white;
+}
+
+.lf-bottom_title{
+   padding: 10px;
+}
+.bottom_title{
+   padding: 10px;
+}
+/*========================================*/
+.program__center{
+   width: 50%;
+   height: 100%;
+   display: inline-block;
+   padding: 10px;
+}
+.program__ct-top{
+   height: 50%;
+   padding: 10px;
+   border-radius: 3%;
+   background-color: gainsboro;
+}
+.program__ct-bottom{
+   height: 50%;
+   margin-top: 10px;
+   border-radius: 3%;
+   background-color: #313c55;
+}
+/*========================================*/
+
+.program__right{
+   width: 24%;
+   height: 100%;
+   padding: 10px;
+   display: inline-block;
+}
+.program__rf-top{
+   height: 50%;
+   padding: 10px;
+   border-radius: 3%;
+   background-color: white;
+}
+.program__rf-bottom{
+   height: 50%;
+   padding: 10px;
+   margin-top: 10px;
+   border-radius: 3%;
+   background-color: white;
+}
 
 /*============== content===============*/
+
+
+
 .box5 {
    width: 1240px;
    height: 120px;
