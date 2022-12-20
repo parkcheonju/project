@@ -25,7 +25,30 @@ body {
 .mt-30 {
    margin-top: 30px !important;
 }
-
+#layer{
+   display: block;
+   position: fixed;
+   width: 570px;
+   height: 550px;
+   background-color: rgb(125, 149, 228);
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+   z-index: 100;
+   font-size: 2em;
+   padding: 3em;
+   box-sizing: border-box;
+   line-height: 2;
+   top: 50px;
+   left: 100px;
+}
+#layer button{
+   cursor: pointer;
+   padding: 10px 20px;
+   position: absolute;
+   right: 0;
+   top: 0;
+   background-color: #222;
+   color: #fff;
+}
 /* ========== LAYOUT ========== */
 
 /* ========== nav-top ========== */
@@ -615,9 +638,13 @@ body {
    background-color: #ffffff;
    border-radius: 3%;
 }
-
-.flex>.ct_bt {
-   padding: 20px 10px 30px 30px;
+.ct_bt{
+   display: flex;
+   justify-content: space-evenly;
+}
+.ct_bt button{
+   width: 120px;
+   height: 50px;
 }
 
 .ct_bottom {
@@ -625,18 +652,17 @@ body {
    height: 320px;
    background-color: #ffffff;
    display: flex;
-   flex-wrap: wrap;
-   align-content: space-around;
    justify-content: space-around;
 }
 
 .bt_lf {
-   width: 550px;
-   height: 300px;
+   width: 90%;
+   height: 100%;
+   padding: 10px;
    background-color: #12285c33;
 }
-
-.ct_ct {
+/*========================================*/
+.ct__ct {
    width: 300px;
    height: 410px;
    background-color: #ffffff;
@@ -647,7 +673,7 @@ body {
    justify-content: space-around;
 }
 
-.ct_mt {
+.ct__mt {
    display: flex;
    width: 290px;
    height: 260px;
@@ -655,14 +681,14 @@ body {
    justify-content: center;
 }
 
-.ct_banner {
+.ct__banner {
    width: 241px;
    height: 30px;
    margin-top: 20px;
    background-color: #ffffff;
 }
 
-.ct_img {
+.ct__img {
    width: 241px;
    height: 201px;
    display: block;
@@ -672,12 +698,12 @@ body {
    font-size: 0;
 }
 
-.ct_ctbt {
+.ct__ctbt {
    width: 250px;
    margin: 10px;
 }
 
-.ct_imglf {
+.ct__imglf {
    width: 120px;
    height: 120px;
    border-radius: 3%;
@@ -688,7 +714,7 @@ body {
    display: inline-block;
 }
 
-.ct_imgrf {
+.ct__imgrf {
    width: 120px;
    height: 120px;
    border-radius: 3%;
@@ -699,7 +725,7 @@ body {
    display: inline-block;
 }
 
-.ct_right {
+.ct__right {
    width: 300px;
    height: 410px;
    border-radius: 3%;
@@ -710,14 +736,14 @@ body {
    justify-content: center;
 }
 
-.ct_rt {
+.ct__rt {
    width: 235px;
    height: 30px;
    background-color: rgb(255, 255, 255);
    margin: 20px 0;
 }
 
-.ct_rtimg {
+.ct__rtimg {
    display: flex;
    width: 235px;
    height: 176px;
@@ -727,7 +753,7 @@ body {
    background-size: cover;
 }
 
-.ct_text {
+.ct__text {
    display: flex;
    flex-wrap: wrap;
    align-content: space-between;
@@ -740,8 +766,6 @@ body {
 }
 
 /* */
-.quickmenu {}
-
 .quickmenu__logo {
    background-image: url(../images/yd_help.png);
    width: 300px;
@@ -854,7 +878,6 @@ body {
 .program__button button{
    width: 110px;
    height: 50px;
-   
 }
 /* =========== program__bottom ============== */
 
@@ -922,14 +945,29 @@ body {
 .program__center{
    width: 50%;
    height: 100%;
-   display: inline-block;
    padding: 10px;
+   background-color: white;
 }
 .program__ct-top{
    height: 50%;
    padding: 10px;
    border-radius: 3%;
    background-color: gainsboro;
+   background-image: url(../images/yd_together.png);
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+.ct-top-text h3{
+   width: 100%;
+   height: 100px;
+   background-image: url(../images/yd_happy.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   font-size: 0;
+}
+.ct-top-text p{
+   text-align: center;
+   z-index: 2;
 }
 .program__ct-bottom{
    height: 50%;
