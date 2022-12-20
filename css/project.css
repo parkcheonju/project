@@ -846,6 +846,16 @@ body {
    background-repeat: no-repeat;
    font-size: 0;
 }
+.program__button{
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-end;
+}
+.program__button button{
+   width: 110px;
+   height: 50px;
+   
+}
 /* =========== program__bottom ============== */
 
 .program__bottom{
