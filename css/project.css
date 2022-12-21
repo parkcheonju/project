@@ -461,7 +461,7 @@ body {
 }
 
 /*================================*/
-.box2 {
+.manu_banner {
    width: 620px;
    height: 380px;
    display: inline-block;
@@ -469,7 +469,7 @@ body {
    border-radius: 3%;
 }
 
-/*================================*/
+/*============== manu ==================*/
 .manu-intgroup {
    width: 300px;
    height: 380px;
@@ -539,7 +539,7 @@ body {
    margin: 5px;
 }
 
-/* int-btn */
+/*================== int-btn ================== */
 .int-btn {
    position: absolute;
    left: 0;
@@ -640,7 +640,7 @@ body {
 }
 .ct__bt{
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
 }
 .ct__bt button{
    width: 120px;
@@ -765,7 +765,7 @@ body {
    color: #494949;
 }
 
-/* */
+/*===============  quickmenu__logo ======================*/
 .quickmenu__logo {
    background-image: url(../images/yd_help.png);
    width: 300px;
@@ -862,6 +862,8 @@ body {
    height: 50%;
    display: flex;
    justify-content: space-evenly;
+   background-color: #3b62bb;
+   border-radius: 10px;
 }
 .program_bn-img{
    width: 165px;
@@ -873,12 +875,21 @@ body {
 .program__button{
    display: flex;
    flex-wrap: wrap;
-   align-content: flex-end;
+   align-content: center;
+   
 }
 .program__button button{
    width: 110px;
-   height: 50px;
+   height: 45px;
+   border-radius: 5%;
+   border: none;
+   font-size: 12px;
+   z-index: 2;
+   background-color: #1b3f91;
+   color: #fafbfc;
 }
+
+
 /* =========== program__bottom ============== */
 
 .program__bottom{
@@ -886,7 +897,7 @@ body {
    display: flex;
    justify-content: space-evenly;
 }
-/*========================================*/
+/*===================program__left=====================*/
 .program__left{
    width: 24%;
    height: 100%;
@@ -916,8 +927,6 @@ body {
 .prgram__lf_top-center{
    padding: 10p;
 }
-/*========================================*/
-
 
 .program__lf-top{
    height: 50%;
@@ -939,18 +948,18 @@ body {
 .bottom_title{
    padding: 10px;
 }
-/*========================================*/
+/*===================program__center=====================*/
 .program__center{
    width: 50%;
    height: 50%;
-   padding: 5px;
+   padding: 10px;
    margin-top: 10px;
-   border-radius: 3%;
+   border-radius: 10px;
    background-color: white;
 }
 .program__ct-top{
    height: 100%;
-   border-radius: 3%;
+   border-radius: 10px;
    background-color: #b2cbe2;
    background-image: url(../images/yd_together.png);
    background-repeat: no-repeat;
@@ -969,9 +978,10 @@ body {
    z-index: 2;
 }
 .program__ct-bottom{
+   width: 100%;
    height: 100%;
-   border-radius: 3%;
-   margin-top: 6px;
+   border-radius: 10px;
+   margin-top: 20px;
    padding: 10px;
    background-color: white;
 }
@@ -1021,7 +1031,7 @@ body {
 .program__icon7{
    background-position: -480px 243px;
 }
-/*========================================*/
+/*===================program__right=====================*/
 
 .program__right{
    width: 24%;
@@ -1052,42 +1062,90 @@ body {
    padding: 10px;
 }
 
-/*============== content===============*/
+/*============== logo__wrap ===============*/
 
-
-
-.box5 {
-   width: 1240px;
-   height: 120px;
-   background-color: rgba(128, 255, 0, 0.712);
-   border-radius: 3%;
+.logo__wrap {
+   background-color: #ffffff;
+}
+.logo__bottom {
+   height: 80px;
+   display: flex;
+   justify-content: space-evenly
+}
+.bottom-img{
+   width: 10%;
+   height: 100%;
+   background-color: #ffffff;
+}
+.bottom-img1{
+   flex-wrap: wrap;
+   display: flex;
+   align-content: center;
+   justify-content: space-evenly;
+}
+.bottom-img2{
+   width: 100%;
+   height: 100%;
+   background-image: url(../images/logo_bottom-yd.png);
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
-.box6 {
-   width: 1240px;
-   height: 825px;
-   background-color: rgba(245, 245, 220, 0.863);
-   border-radius: 3%;
-}
-
-.box7 {
-   height: 76px;
-   display: block;
-}
-
-.box8 {
-   height: 168px;
-   display: block;
-}
-
-.logo_wrap {
-   background-color: #e1e1e1;
-}
-
+/*============== footer__wrap ===============*/
 .footer_wrap {
-   background-color: black;
+   background-color: #3d4049;
+}
+.footer__container {
+   height: 168px;
+   display: flex;
+   background-color: #3d4049;
+}
+.footer__left{
+   width: 70%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   color: #d2d3d5;
+}
+.footer__top{
+   width: 100%;
+   height: 50%;
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: space-around;
 }
 
+.top_font{
+   color: #d6d637;
+}
+
+.footer__bottom{
+   width: 100%;
+   height: 50%;
+   padding: 10px;
+}
+
+.fotter__right{
+   width: 30%;
+   height: 100%;
+}
+.boxt{
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+.fotter__right-img{
+   width: 100%;
+   height: 100%;
+   background-image: url(../images/footer_right-yd.png);
+   background-repeat: no-repeat;
+   background-position: 242px 69px;
+}
+.fotter__right-img p{
+   font-size: 0;
+}
 /* 배경 포인트요소 */
 body::after {
    position: absolute;
