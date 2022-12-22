@@ -54,6 +54,7 @@
       <p>이 사이트는 학습용으로 제작하였으며 영동군청과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다.</p>
       <button>닫기</button>
     </div>
+    <div class="background-img"></div>
     <header>
       <!-- nav-top -->
       <nav class="nav-top">
@@ -422,7 +423,7 @@
                         </ul>
                       </li>
                       <li>
-                        <div class="nav__menu-main">인구증가정책</div>
+                        <div class="nav__menu-main" >인구증가정책</div>
                       </li>
                     </ul>
                   </div>
@@ -444,7 +445,7 @@
       </nav>
     </header>
 
-    <section class="banner_wrap">
+    <div class="banner_wrap">
       <!-- 첫번째 줄-->
       <div class="banner_top inner flex">
         <div class="banner_lf">
@@ -521,9 +522,9 @@
                 <div class="int-pp"></div>
               </div>
 
-              <ul class="int-btn">
+              <ul class="int-btn" >
                 <li class="int-item">
-                  <div class="int__icon int__icon-1"></div>
+                  <div class="int__icon int__icon-1" ></div>
                   <p>청사안내</p>
                 </li>
 
@@ -541,9 +542,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="content_wrap">
+    <div class="content_wrap">
       <div class="inner">
         <div class="ct">
           <div class="ct__top">소식 민원정보</div>
@@ -652,7 +653,8 @@
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+
     <!--program-->
     <div class="program__wrap inner">
       <div class="program__top">
@@ -676,39 +678,41 @@
         <div class="program__left">
           <div class="program__lf-top">
             <div class="prgram__lf_top-top">
-              <div class="lf_top-top">보건소 운영 안내</div>
+              <div class="lf_top-top"><span>보건소</span>운영 안내</div>
               <div class="lf_top-bottom">현재 당직중인 병원 약국을 안내합니다</div>
             </div>
             <div class="prgram__lf_top-center">
               <ul>
-                <li class="lf_top-center"><span>진료시간</span> AM. 09:00 ~ PM.18시(월~금)</li>
-                <li class="lf_top-center"><span>휴무일</span> 토, 일, 공휴일 휴무</li>
-                <li class="lf_top-center"><span>전화번호</span> 043 - 740 - 5622</li>
+                <li class="lf_top-center"><span>진료시간</span> <p>AM. 09:00 ~ PM.18시(월~금)</p></li>
+                <li class="lf_top-center"><span>휴무일</span> <p>토, 일, 공휴일 휴무</p></li>
+                <li class="lf_top-center"><span>전화번호</span> <p>043 - 740 - 5622</p></li>
               </ul>
             </div>
             <div class="prgram__lf_top-bottom">
-              <div class="lf_top-bottom-bottom"><button>시설안내</button></div>
-              <div class="lf_top-bottom-bottom"><button>보건소 진료 안내</button></div>
+              <div class="bottom-left"><a href="#">시설안내</a></div>
+              <div class="bottom-right"><a href="#">보건소 진료 안내</a></div>
             </div>
           </div>
           <div class="program__lf-bottom">
             <div class="lf-bottom_title">공지사항</div>
             <div class="bottom_title">
               <ul>
-                <li>코로나19 백신 접종에 따른 이상반응 안내사항 알림04.26</li>
-                <li>코로나19 관련 국민행동수칙03.04</li>
-                <li>액상형 전자담배 사용중단 강력 권고10.25</li>
-                <li>2019년 유료 인플루엔자 예방접종 안내10.10</li>
-                <li>2019년 어린이 및 임신부 무료 인플루엔자 예방접종 안내10.08</li>
+                <li>코로나19 백신 접종에 따른 이상반응 안내사항 알림<em>04.26</em></li>
+                <li>코로나19 관련 국민행동수칙<em>03.04</em></li>
+                <li>액상형 전자담배 사용중단 강력 권고<em>10.25</em></li>
+                <li>2019년 유료 인플루엔자 예방접종 안내<em>10.10</em></li>
+                <li>2019년 어린이 및 임신부 무료 인플루엔자 예방접종 안내<em>10.08</em></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="program__center">
           <div class="program__ct-top">
-            <div class="ct-top-text">
-              <h3>건강한 군민! 행복한 영동군!</h3>
-              <p>"영동군민의 건강을 위해 항상 생각하고 노력하는"<br />"영동군이 되겠습니다."</p>
+            <div class="program__top-top">
+              <div class="ct-top-text">
+                <h3>건강한 군민! 행복한 영동군!</h3>
+                <p>"영동군민의 건강을 위해 항상 생각하고 노력하는"<br />"영동군이 되겠습니다."</p>
+              </div>
             </div>
           </div>
           <div class="program__ct-bottom">
@@ -753,20 +757,21 @@
         <div class="program__right">
           <div class="program__rf-top">
             <div class="rf-top_wrap">
-              <h4>이달의당직병원약국</h4>
-              <ul>
-                현재 당직중인 병원 약국을 안내합니다.
-                <li>이달의 당직병원약국 정보가 없습니다.</li>
-              </ul>
-              <div>영동병원은 응급의료기관으로 지정되어 24시간 진료가 가능합니다.</div>
+              <p><span>이달의</span>당직병원약국</p>
+                <ul class="rf-top_bottom1">
+                  <span>현재 당직중인 병원 약국을 안내합니다.</span>
+                  <li>이달의 당직병원약국 정보가 없습니다.</li>
+                </ul>
+                <div class="rf-top_bottom2">영동병원은 응급의료기관으로 지정되어 24시간 진료가 가능합니다.</div>
+                <span class="danger"></span> 
             </div>
           </div>
           <div class="program__rf-bottom">
             <div class="rf-bottom_wrap">
-              <div><h4>금주프로그램</h4></div>
+              <p><span>금주</span>프로그램</p>
               <ul>
-                <li>치매어르신을 섬기는 가족을 위한 "헤아림 가족교실" 안내03.19</li>
-                <li>소아아토피 피부염 관리 교육05.22</li>
+                <li>치매어르신을 섬기는 가족을 위한 "헤아림 가족교실" 안내<em>03.19</em></li>
+                <li>소아아토피 피부염 관리 교육<em>05.22</em></li>
               </ul>
               <div></div>
             </div>
@@ -775,7 +780,7 @@
       </div>
     </div>
 
-    <section class="logo__wrap">
+    <div class="logo__wrap">
       <div class="inner">
         <div class="logo__bottom">
           <div class="bottom-img bottom-img1">
@@ -813,7 +818,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
     <footer>
       <nav class="footer_wrap">
         <div class="inner">
