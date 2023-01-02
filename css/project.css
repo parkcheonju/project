@@ -756,24 +756,44 @@ body {
    justify-content: space-evenly;
 }
 
-.ct__bt button {
-   width: 80px;
+.ct__bt li{
+   width: 120px;
    height: 50px;
-   border-radius: 10px;
-   background-color: white;
+   background-color: #ebebeb;
    cursor: pointer;
 }
 
+.ct__bt li a{
+   color: #999;
+   display: block;
+   width: 120px;
+   line-height: 27px;
+   height: 27px;
+   padding: 0 20px;
+   text-decoration: none;
+}
+.ct__bt li a:active{
+   background: #000;
+   color: #fff;
+}
 .ct__bottom {
    width: 610px;
    height: 320px;
    background-color: #ffffff;
    display: flex;
    justify-content: space-around;
+   position: relative;
+}
+
+.ct__bottom div{
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: none;
 }
 
 .bt__lf {
-   width: 90%;
+   width: 100%;
    height: 100%;
    padding: 10px;
    border-top: 1px solid hsl(0deg 0% 87%);
