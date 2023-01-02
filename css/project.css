@@ -810,8 +810,6 @@ body {
    background-color: #ffffff;
 }
 
-.ct__ctbt {}
-
 .ct__img {
    width: 241px;
    height: 201px;
@@ -834,8 +832,6 @@ body {
    display: inline-block;
    margin-bottom: 20px;
 }
-
-.ct__imglf::after {}
 
 .ct__imgrf {
    width: 140px;
