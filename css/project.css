@@ -850,6 +850,21 @@ body {
    font-size: 0;
    display: inline-block;
    margin-bottom: 20px;
+   position: relative;
+   cursor: pointer;
+}
+.ct__imglf2{
+   content: '';
+   width: 140px;
+   height: 140px;
+   background-image: url(../images/yd_obj00.png);
+   background-repeat: no-repeat;
+   background-position: 92px 72px;
+   position: absolute;
+}
+.ct__imglf2:hover{
+   animation-name: up-down;
+   animation-duration: 1s; 
 }
 
 .ct__imgrf {
@@ -862,8 +877,24 @@ body {
    background-position: 10px 16px;
    font-size: 0;
    display: inline-block;
+   position: relative;
+   cursor: pointer;
 }
 
+.ct__imgrf2{
+   content: '';
+   width: 140px;
+   height: 140px;
+   background-image: url(../images/yd_obj01.png);
+   background-repeat: no-repeat;
+   background-position: 87px 78px;
+   position: absolute;
+
+}
+.ct__imgrf2:hover{
+   animation-name: up-down;
+   animation-duration: 1s; 
+}
 .ct__right {
    width: 300px;
    height: 410px;
@@ -1597,4 +1628,4 @@ body {
    100% {
       transform: rotate(720deg)
    }
-}
+}  
