@@ -8,8 +8,8 @@ taps.click(function(e){
     e.preventDefault();
     let tg=$(this);
     let currentLink=tg.attr("href");
+
     taps.removeClass("active");
     $(currentLink).show();
     panels.hide();
 });
-console.log(taps)
