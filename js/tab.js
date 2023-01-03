@@ -12,5 +12,5 @@ menus.click(function (e) {
   menus.removeClass("active"); //menus의값 $(".ct__bt>li>a");에 적용되어있는 active를 지우고 
   tg.addClass("active"); //현재 클릭으로 만든 이벤트에 active 효과 넣어줘
   panels.hide(); // 패널 다 숨겨줘
-  $(currentLink).show(); // 클릭이벤트의 속성값은 href인데 그걸 currentLink로 정의한 값을 보여줘?
+  $(currentLink).show(); // 클릭이벤트의 속성값은 href인데 그걸 currentLink로 정의한 값을 보여줘라
 });
