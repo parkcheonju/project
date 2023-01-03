@@ -209,8 +209,16 @@ header .nav__menu-wrap {
 .nav__menu-left {
    width: 30%;
    padding: 20px 0;
+   position: relative;
 }
-
+.nav__left{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-image: url(../images/gnb_bg.png);
+   background-repeat: no-repeat;
+   background-position: 218px 296px;
+}
 .nav__menu-left>h2 {
    margin-bottom: 40px;
    position: relative;
@@ -251,6 +259,7 @@ header .nav__menu-wrap {
 .nav__menu-main {
    padding: 12px 12px;
    border: 1px solid hsl(0deg 0% 87%);
+   margin:5px;
 }
 
 .nav__menu-sub {
