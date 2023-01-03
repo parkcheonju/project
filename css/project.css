@@ -260,8 +260,12 @@ header .nav__menu-wrap {
    padding: 12px 12px;
    border: 1px solid hsl(0deg 0% 87%);
    margin:5px;
+   cursor: pointer;
 }
-
+.nav__menu-main:hover{
+   border: 2px solid #02346b;
+   margin: 1px;
+}
 .nav__menu-sub {
    padding-left: 30px;
    list-style: disc;
@@ -752,11 +756,10 @@ body {
 
 .ct__top {
    width: 1240px;
-   height: 70px;
    padding-top: 120px;
    background-image: url(../images/ct_top.png);
    background-repeat: no-repeat;
-   background-position: 516px 65px;
+   background-position: 516px 58px;
    font-size: 0;
    background-color: #8ecaed07;
 }
@@ -1054,7 +1057,7 @@ body {
    font-size: 0;
    background-image: url(../images/program_top.png);
    background-repeat: no-repeat;
-   background-position: 660px 0px;
+   background-position: 618px 0px;
    ;
    text-align: center;
 }
@@ -1260,8 +1263,8 @@ body {
 }
 
 .program__top-top {
-   width: 97%;
-   height: 97%;
+   width: 100%;
+   height: 103%;
    border-radius: 10px;
    background-color: #b2cbe2;
    background-image: url(../images/yd_together.png);
@@ -1522,7 +1525,15 @@ body {
    background-position: center;
    background-size: contain;
 }
-
+.logo_bt{
+   font-size: 15px;
+   padding: 5px;
+   background-color: white;
+   border: 0;
+}
+.logo_bt:hover{
+   cursor: pointer;
+}
 /*============== footer__wrap ===============*/
 
 .footer_wrap {
