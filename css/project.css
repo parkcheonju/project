@@ -811,7 +811,7 @@ body {
    width: 50%;
    height: 410px;
    background-color: #ffffff;
-   border-radius: 3%;
+   border-radius: 10px;
 }
 
 .ct__bt {
@@ -873,46 +873,47 @@ body {
 .ct__ct {
    width: 300px;
    height: 410px;
-   border-radius: 3%;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   justify-content: center;
+   border-radius: 10px;
 }
 
-.ct__mt {
+.ct__ctbt{
+   margin-top: 10px;
    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.ct__mt {
    width: 290px;
    height: 260px;
    border-radius: 10px;
-   margin-top: 25px;
-   padding-bottom: 10px;
-   overflow: hidden;
+   margin-left: 5px;
    background-color: #ffffff;
-   flex-wrap: wrap;
-   justify-content: center;
 }
 
 .ct__banner {
-   width: 241px;
-   height: 30px;
-   margin-top: 20px;
+   padding: 5px 0 5px 24px;
+   width: 100%;
+   height: 35px;
+   border-radius: 10px;
+   display: inline-block;
    background-color: #ffffff;
 }
-
-.ct__img {
-   width: 241px;
-   height: 201px;
-   display: block;
-   background-image: url(../images/ct__img-00.jpg);
-   background-size: cover;
+.ct__img{
+   width: 100%;
+   height: 100%;
+   display: flex;
+}
+.ct__slide-item{
+   width: 100%;
+   height: 100%;
+   background-image:  url(/images/ct__img-00.jpg);
    background-repeat: no-repeat;
-   font-size: 0;
+   background-position: 25px 4px;
 }
 
 .ct__imglf {
    width: 140px;
-   height: 130px;
+   height: 140px;
    border-radius: 10px;
    background-color: #1ea6c8;
    background-image: url(../images/pvp.png);
@@ -920,7 +921,6 @@ body {
    background-position: 10px 16px;
    font-size: 0;
    display: inline-block;
-   margin-bottom: 20px;
    position: relative;
    cursor: pointer;
 }
@@ -940,7 +940,7 @@ body {
 
 .ct__imgrf {
    width: 140px;
-   height: 130px;
+   height: 140px;
    border-radius: 10px;
    background-color: #3c9dec;
    background-image: url(../images/sorry.png);
@@ -969,7 +969,7 @@ body {
 .ct__right {
    width: 300px;
    height: 410px;
-   border-radius: 3%;
+   border-radius: 10px;
    background-color: rgb(255, 255, 255);
    display: flex;
    flex-wrap: wrap;
@@ -978,18 +978,18 @@ body {
 }
 
 .ct__rt {
-   width: 235px;
-   height: 30px;
+   padding: 5px 0 5px 24px;
+   width: 100%;
+   height: 35px;
+   border-radius: 10px;
    background-color: rgb(255, 255, 255);
-   margin: 20px 0;
-   padding: 0 30px 0 0;
 }
 
 .ct__rtimg {
-   display: flex;
    width: 235px;
    height: 176px;
    display: block;
+   margin-top: 25px;
    background-image: url(../images/verywell.jpg);
    background-repeat: no-repeat;
    background-size: cover;
