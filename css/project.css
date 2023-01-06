@@ -831,7 +831,7 @@ body {
    align-content: space-around;
 }
 .ct__bt li a{
-   color: #999;
+   color: #5b5252;
    display: block;
    width: 120px;
    line-height: 27px;
@@ -914,7 +914,7 @@ body {
    width: 140px;
    height: 130px;
    border-radius: 10px;
-   background-color: #047c9a;
+   background-color: #1ea6c8;
    background-image: url(../images/pvp.png);
    background-repeat: no-repeat;
    background-position: 10px 16px;
@@ -1196,7 +1196,7 @@ body {
 }
 
 .lf_top-center p {
-   color: #797979;
+   color: #625555;
 }
 
 
@@ -1436,7 +1436,7 @@ body {
 .rf-top_bottom1 {
    padding-top: 20px;
    font-size: 15px;
-   color: #7d7d7d;
+   color: #4e4646;
 }
 
 .rf-top_bottom1 li {
