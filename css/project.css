@@ -1109,7 +1109,7 @@ body {
    min-width: 1240px;
    max-width: 1480px;
    height: 800px;
-   border-radius: 3%;
+   padding: 30px 0 80px 0;
 }
 
 
@@ -1217,13 +1217,9 @@ body {
    color: #625555;
 }
 
-
-
-
 .prgram__lf_top-bottom {
-   padding: 10px;
    display: flex;
-   justify-content: space-evenly
+   justify-content: space-evenly;
 }
 
 .bottom-left {
@@ -1714,5 +1710,5 @@ body {
 }  
 
 @media (min-width: 1024px) {
-   .title { font-size: 18px; }
+   header { font-size: 18px;}
  }
