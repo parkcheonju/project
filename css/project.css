@@ -97,7 +97,7 @@ header {
 section{
    position: relative;
 }
-main{
+article{
    background-image: url(../images/main_bg.gif);
    background-repeat: no-repeat;
    background-size: 100%;
@@ -107,7 +107,15 @@ main{
    left: 0;
    z-index: -1;
 }
-
+.background_img{
+   background-image: url(../images/bg_mainbt.png);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: 1px 1px;
+   min-width: 1240px;
+   top: 0;
+   right: 0;
+}
 header .nav__menu-wrap {
    position: absolute;
    left: 0;
@@ -1031,7 +1039,6 @@ body {
    font-size: 15px;
    color: #494949;
 }
-
 .quickmenu__logo {
    background-image: url(../images/yd_help.png);
    width: 300px;
