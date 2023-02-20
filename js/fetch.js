@@ -5,7 +5,7 @@ rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud
 //getUltraSrtNcst 초단기 실황을 받아오는 파라미터 엑셀파일에 적혀있음
 //getUltraSrtFcst 단기예보
 
-let url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
+let url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
 
 let params = {
   type: ["getUltraSrtNcst", "getUltraSrtFcst"], //(초단기실황)(단기예보)
