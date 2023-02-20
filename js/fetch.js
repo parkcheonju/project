@@ -76,11 +76,11 @@ async function setPosts() {
   cast.loc();
 
   tr.innerHTML = `
-  <td>오늘날짜:${cast.baseDate}</td>
-  <td>지역:${locText}</td>
-  <td>강수형태:${statusText}${rainIcon}</td>
-  <td>기온:${cast.temperature}</td>
-  <td>바람:${cast.wind}</td>
+  <tr>오늘날짜:${cast.baseDate}</tr><hr>
+  <tr>지역:${locText}</tr><hr>
+  <tr>강수형태:${statusText}${rainIcon}</tr><hr>
+  <tr>기온:${cast.temperature}</tr><hr>
+  <tr>바람:${cast.wind}</tr>
   `;
 
   castEl.appendChild(tr);

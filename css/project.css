@@ -496,9 +496,18 @@ body {
 }
 
 .banner_weather {
-  width: 100%;
+  width: 25%;
   font-size: small;
   text-align: justify;
+  display: flex;
+  justify-content: space-around;
+}
+.banner_weather >a{
+  margin-top: 35px;
+}
+
+.menu_wrap{
+  margin-top: 20px;
 }
 
 .face {
