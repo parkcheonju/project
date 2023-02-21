@@ -36,14 +36,11 @@ async function setPosts() {
   const castEl = document.createElement("table");
   castEl.classList.add("table");
   const tr = document.createElement("tr");
-
-  //console.log(datas);
   let cast = {
     baseDate: datas[0].baseDate,
     rain: datas[0].obsrValue,
     rainInfo: function () {
       let info = this.rain + 2;
-      console.log(info);
 
       if (info == 0) {
         statusText = "맑음";
@@ -65,7 +62,6 @@ async function setPosts() {
     ny: datas[0].ny,
     loc: function () {
       let point = [this.nx, this.ny];
-      console.log(point);
       if (point[0] == 55 && point[1] == 127) {
         locText = "영동군";
       }
