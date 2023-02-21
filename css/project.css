@@ -696,42 +696,64 @@ body {
   height: 380px;
   position: relative;
   cursor: pointer;
-}
-.manu_banner ul {
-  display: flex;
+  border-radius: 10px;
 }
 
-.manu_banner .banner_img-00 {
-  width: 620px;
-  height: 380px;
-  border-radius: 10px;
-  background-image: url(../images/manu_img-00.jpg);
-  background-repeat: no-repeat;
+.bx-next {
+  text-decoration: none;
+  font-size: 2em;
   position: absolute;
-  left: 0%;
+  top: 50%;
+  right: 0;
 }
+.bx-prev {
+  text-decoration: none;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.bx-controls-auto-item{
+  position: absolute;
+  top: 88%;
+  left: 80%;
+}
+
+.bx-controls-auto-item .bx-start{
+  position: relative;
+  padding: 20px;
+  border: 1px solid black;
+  background-color:#494949;
+}
+.bx-controls-auto-item .bx-stop{
+  position: absolute;
+  top: -20px;
+  left: 55px;
+  padding: 20px;
+  background-color:#494949;
+  border: 1px solid black;
+}
+/*
+.bx-pager{
+  position: absolute;
+  top: 83%;
+  left: 74%;
+  display: flex;
+}
+.bx-pager > div{
+  padding: 20px;
+  background-color:#494949;
+  border: 1px solid black;
+}
+*/
+.bx-pager{
+  display: none;
+}
+
 #banner_slide {
   overflow: hidden;
 }
-.manu_banner .banner_img-01 {
-  width: 620px;
-  height: 380px;
-  border-radius: 10px;
-  background-image: url(../images/manu_img-01.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 100%;
-}
 
-.manu_banner .banner_img-02 {
-  width: 620px;
-  height: 380px;
-  border-radius: 10px;
-  background-image: url(../images/manu_img-02.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 200%;
-}
 
 .banner_button {
   display: flex;
@@ -1246,33 +1268,26 @@ body {
   width: 100%;
   height: 20%;
 }
-
-.program__menu {
+.program__rel{
+  position: relative;
+}
+.program__top__banner{
   width: 100%;
-  height: 50%;
-  font-size: 0;
-  background-image: url(../images/program_top.png);
-  background-repeat: no-repeat;
-  background-position: 618px 0px;
   text-align: center;
 }
-
+.program__top__img{
+  position: absolute;
+  left: 10px;
+  top:45px
+}
 .program__banner {
   height: 50%;
   display: flex;
   justify-content: space-evenly;
   background-color: #3b62bb;
   border-radius: 10px;
+  margin-top: 20px;
 }
-
-.program_bn-img {
-  width: 170px;
-  background-image: url(../images/program_button.png);
-  background-repeat: no-repeat;
-  font-size: 0;
-  cursor: pointer;
-}
-
 .program__button {
   display: flex;
   flex-wrap: wrap;
@@ -1282,19 +1297,20 @@ body {
 
 .program__button button {
   cursor: pointer;
-}
-
-.program__button button {
   width: 100px;
   height: 45px;
   border-radius: 5%;
   border: none;
   font-size: 12px;
   z-index: 2;
-  background-color: #1b3f91;
+  background-color: #3b62bb;;
   color: #fafbfc;
 }
 
+.program__no__button{
+  width: 150px;
+  height: 45px;
+}
 .program__bottom {
   height: 80%;
   display: flex;

@@ -33,6 +33,7 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -41,10 +42,10 @@
 
   <body>
     <!--layer start-->
-    <div id="layer">
+    <!-- <div id="layer">
       <p>이 사이트는 학습용으로 제작하였으며 영동군청과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다.</p>
       <button>닫기</button>
-    </div>
+    </div> -->
     <!--layer end-->
     <!--header start-->
     <header>
@@ -568,16 +569,11 @@
                     <div class="manu_icon icon_7"><a href="#">농기계입대</a></div>
                     <div class="manu_icon icon_8"><a href="#">예산현황</a></div>
                   </div>
-                  <div class="manu_banner" id="banner_slide">
-                    <ul>
-                      <li><div class="banner_img-00"></div></li>
-                      <li><div class="banner_img-01"></div></li>
-                      <li><div class="banner_img-02"></div></li>
-                    </ul>
-                    <ul class="banner_button" id="slide_bt">
-                      <li class="banner_button00">&lt;</li>
-                      <li class="banner_button01">&gt;</li>
-                      <li class="banner_button02">d</li>
+                  <div class="manu_banner">
+                    <ul class="bxslider">
+                      <li><img src="images/manu_img-00.jpg" alt=""></li>
+                      <li><img src="images/manu_img-01.jpg" alt=""></li>
+                      <li><img src="images/manu_img-02.jpg" alt=""></li>
                     </ul>
                   </div>
                   <div class="manu-intgroup">
@@ -746,23 +742,26 @@
         <div class="background_img mb_30">
           <div class="program__wrap inner">
             <div class="program__top">
-              <div class="program__menu"></div>
-              <div class="program__banner">
-                  <p class="program_bn-img">보건 의료</p>
-                  <div class="program__button"><button>보건·의료</button></div>
-                  <div class="program__button"><button>교육</button></div>
-                  <div class="program__button"><button>복지</button></div>
-                  <div class="program__button"><button>산업경제</button></div>
-                  <div class="program__button"><button>농·축산업</button></div>
-                  <div class="program__button"><button>재난·안전·민방위</button></div>
-                  <div class="program__button"><button>환경·상하수도</button></div>
-                  <div class="program__button"><button>교통</button></div>
-                  <div class="program__button"><button>식품·위생</button></div>
-                  <div class="program__button"><button>생활·체육시설</button></div>
-                  <div class="program__button"><button>부동산</button></div>
+              <div class="program__rel flex">
+                <div class="program__top__img"><img src="images/program_button.png" alt=""></div>
+                <div class="program__top__banner"><img src="images/program_top.png" alt=""></div>
+              </div>
+              <div class="program__banner mt_10">
+                <div class="program__no__button"></div>
+                <div class="program__button"><button>보건·의료</button></div>
+                <div class="program__button"><button>교육</button></div>
+                <div class="program__button"><button>복지</button></div>
+                <div class="program__button"><button>산업경제</button></div>
+                <div class="program__button"><button>농·축산업</button></div>
+                <div class="program__button"><button>재난·안전·민방위</button></div>
+                <div class="program__button"><button>환경·상하수도</button></div>
+                <div class="program__button"><button>교통</button></div>
+                <div class="program__button"><button>식품·위생</button></div>
+                <div class="program__button"><button>생활·체육시설</button></div>
+                <div class="program__button"><button>부동산</button></div>
               </div>
             </div>
-            <div class="program__bottom">
+            <div class="program__bottom ">
               <div class="program__left">
                   <div class="program__lf-top">
                     <div class="prgram__lf_top-top">
@@ -967,6 +966,9 @@
     <script src="js/slide.js"></script>
     <script src="js/tab.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+    <script src="bx.js"></script>
     <!--script end-->
   </body>
 </html>
