@@ -42,10 +42,10 @@
 
   <body>
     <!--layer start-->
-    <!-- <div id="layer">
+    <div id="layer">
       <p>이 사이트는 학습용으로 제작하였으며 영동군청과 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다.</p>
       <button>닫기</button>
-    </div> -->
+    </div>
     <!--layer end-->
     <!--header start-->
     <header>
@@ -67,8 +67,11 @@
               <li class="pd__right">
                 <a href="#"><img src="images/home.png" alt="홈 아이콘">홈으로</a>
               </li>
-              <li>
+              <li class="pd__right">
                 <p><a href="#">로그인</a></p>
+              </li>
+              <li class="pd__right">
+                <p><a href="#">회원가입</a></p>
               </li>
             </ul>
           </div>
@@ -79,9 +82,9 @@
           <div class="img-wrap fl-l">
             <a href="#"><img src="images/logo.png" alt="로고"></a>
           </div>
-          <ul class="fl-l ul-row ul-dot top-pd font-size">
+          <ul class="fl-l ul-row ul-dot top-pd">
             <li class="drop-down pd-left">
-              <p><a href="#">종합민원</a></p>
+              <p class="font-size"><a href="#">종합민원</a></p>
               <div class="nav__menu-wrap">
                 <div class="container flex">
                   <div class="nav__menu-left">
@@ -163,7 +166,7 @@
               </div>
             </li>
             <li class="drop-down pd-left">
-              <p><a href="#">소식 · 참여</a></p>
+              <p class="font-size"><a href="#">소식 · 참여</a></p>
               <div class="nav__menu-wrap">
                 <div class="container flex">
                   <div class="nav__menu-left">
@@ -234,7 +237,7 @@
               </div>
             </li>
             <li class="drop-down pd-left">
-              <p><a href="#">행정정보</a></p>
+              <p class="font-size"><a href="#">행정정보</a></p>
               <div class="nav__menu-wrap">
                 <div class="container flex">
                   <div class="nav__menu-left">
@@ -346,7 +349,7 @@
               </div>
             </li>
             <li class="drop-down pd-left">
-              <p><a href="#">영동소개</a></p>
+              <p class="font-size"><a href="#">영동소개</a></p>
               <div class="nav__menu-wrap">
                 <div class="container flex">
                   <div class="nav__menu-left">
@@ -433,7 +436,7 @@
               </div>
             </li>
             <li class="drop-down pd-left">
-              <p><a href="#">분야별정보</a></p>
+              <p class="font-size"><a href="#">분야별정보</a></p>
               <div class="nav__menu-wrap">
                 <div class="container flex">
                   <div class="nav__menu-left">
@@ -444,33 +447,25 @@
                     </div>
                   </div>
                   <div class="nav__menu-right">
-                    <div class="flex">
-                      <div class="menu-rightbox">
-                        <div class="box_container">복지</div>
-                        <div class="box_container">재난/안전/민방위</div>
-                        <div class="box_container">교육/강좌</div>
-                      </div>
-                      <div class="menu-rightbox">
-                        <div class="box_container">산업/경제</div>
-                        <div class="box_container">환경/상하수도</div>
-                        <div class="box_container">체육시설</div>
-                      </div>
-                      <div class="menu-rightbox">
-                        <div class="box_container">보건/의료</div>
-                        <div class="box_container">교통</div>
-                        <div class="box_container">부동산</div>
-                      </div>
-                      <div class="menu-rightbox">
-                        <div class="box_container">농/축산업</div>
-                        <div class="box_container">식품/위생</div>
-                      </div>
-                    </div>
+                    <ul class="ul-row flex">
+                      <li><div class="nav__menu-main">산업/경제</div></li>
+                      <li><div class="nav__menu-main">보건/의료</div></li>
+                      <li><div class="nav__menu-main">농/축산업</div></li>
+                      <li><div class="nav__menu-main">추풍령면</div></li>
+                      <li><div class="nav__menu-main">재난/안전/민방위</div></li>
+                      <li><div class="nav__menu-main">환경/상하수도</div></li>
+                      <li><div class="nav__menu-main">교통</div></li>
+                      <li><div class="nav__menu-main">식품/위생</div></li>
+                      <li><div class="nav__menu-main">교육/강좌</div></li>
+                      <li><div class="nav__menu-main">체육시설</div></li>
+                      <li><div class="nav__menu-main">부동산</div></li>
+                    </ul>
                   </div>
                 </div>
               </div>
             </li>
             <li class="drop-down pd-left">
-              <p><a href="#">읍면</a></p>
+              <p class="font-size"><a href="#">읍면</a></p>
               <div class="nav__menu-wrap">
                 <div class="container flex">
                   <div class="nav__menu-left">
@@ -523,8 +518,8 @@
               <div class="banner_ct">
                 <img src="images/main_title.png" alt="함께하는군민 살맛나는 영동">
               </div>
-              <div class="banner_rf">
-                <ul class="flex">
+              <div class="banner_rf_top">
+                <ul class="banner_rf flex qr_flex">
                   <li>
                     <a href="#"><span class="face"></span>페이스북</a>
                   </li>
@@ -598,7 +593,7 @@
               </div>
             </div>
           </div>
-          <div class="mt_30">
+          <div class="mt_10">
             <div class="inner">
               <div class="ct">
                 <div class="ct__top">소식 민원정보</div>
@@ -613,48 +608,54 @@
                   <div class="ct__bottom">
                     <div class="bt__lf" id="tabs-1">
                       <ul>
-                        <li>
-                          <a href="#"
-                           ><strong>제11회 영동군민 정보화능력 경진대회 신청자 모집</strong>
-                            <p>영동군민의 정보화 교육 성과를 측정하고 디지털 문화 생활화에 따른 정보화 교육의 중...</p>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#">청소년(12~17세) 동절기 추가접종 안내</a>
-                        </li>
-                        <li>
-                          <a href="#">2023년 정기분 등록면허세(면허) 납부 안내</a>
-                        </li>
+                        <li><a href="#">제11회 영동군민 정보화능력 경진대회 신청자 모집</a></li>
+                        <li><a href="#">정보화 교육 성과를 측정, 디지털 문화 생활화 정보화 교육</a></li>
+                        <li><a href="#">청소년(12~17세) 동절기 추가접종 안내</a></li>
+                        <li><a href="#">2023년 정기분 등록면허세(면허) 납부 안내</a></li>
                         <li><a href="#">2023년 자동차세 선납 신청 납부 안내</a></li>
-                        <li>
-                          <a href="#">2022년 하반기 자동차 관련 과태료 체납 일제정리 반송분(2차) 공시송달 공고</a>
-                        </li>
-                        <li>
-                          <a href="#">개정된 "주택임대차표준계약서" 서식 안내</a>
-                        </li>
-                        <li>
-                          <a href="#">용화면사무소 청사 CCTV 설치에 따른 행정예고</a>
-                        </li>
+                        <li><a href="#">자동차 관련 과태료 체납 일제정리 반송분(2차) 공시송달 공고</a></li>
+                        <li><a href="#">개정된 "주택임대차표준계약서" 서식 안내</a></li>
+                        <li><a href="#">용화면사무소 청사 CCTV 설치에 따른 행정예고</a></li>
                       </ul>
                     </div>
                     <div class="bt__lf" id="tabs-2">
                       <ul>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem eveniet dolorum error sint reprehenderit numquam, alias unde fugit officia necessitatibus minima aliquam similiquvero eos harum repellendus sed animi dicta!</li>
+                        <li><a href="#">건설안전점검(건축, 공동주택 신축공사) 수행기관 지정 공고</a></li>
+                        <li><a href="#">농촌마을 안전용 CCTV 설치에 따른 행정예고 알림</a></li>
+                        <li><a href="#">지방세 독촉장 공시송달</a></li>
+                        <li><a href="#">고병원성AI 특별방역대책기간 연장에 따른 방역관련 행정명령 연장 공고</a></li>
+                        <li><a href="#">제309회 영동군의회 임시회 부의안건 공고</a></li>
+                        <li><a href="#">도로관리청 아닌 자의 도로공사 시행허가 공고</a></li>
                       </ul>
                     </div>
                     <div class="bt__lf" id="tabs-3">
                       <ul>
-                        <li>Lor necessitatibus minima aliquam similique vero eos harum repellendus sed animi dicta!</li>
+                        <li><a href="#">영동군체육회 2023년 생활체육교실 강사 모집</a></li>
+                        <li><a href="#">2023년 공원녹지팀 기간제근로자 모집 공고(3차</a></li>
+                        <li><a href="#">보건소 2023년 모바일헬스케어 기간제 근로자 모집</a></li>
+                        <li><a href="#">2023년도 국악체험촌 기간제근로자 최종 합격자 공고</a></li>
+                        <li><a href="#">2023년 보건소 기간제근로자(결핵전담) 채용 재공고</a></li>
+                        <li><a href="#">2023년 체육시설 환경관리 기간제근로자 모집 공고/a></li>
                       </ul>
                     </div>
                     <div class="bt__lf" id="tabs-4">
                       <ul>
-                        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem eveniet dossitatibus minima aliquam similique vero eos harum repellendus sed animi dicta!</li>
+                        <li><a href="#">「영동군 에너지 기본 조례 」제정(안) 입법 예고</a></li>
+                        <li><a href="#">「영동군 기업 및 투자유치 촉진 조례 시행규칙」일부개정규칙(안) 입법예고</a></li>
+                        <li><a href="#">「영동군 영동와인공장 관리 및 운영 조례」 제정안 입법예고</a></li>
+                        <li><a href="#">「영동군 군세 징수 조례 시행규칙」일부개정규칙안 입법예고</a></li>
+                        <li><a href="#">영동군 개인형 이동장치 이용안전 증진 조례안 입법예고</a></li>
+                        <li><a href="#">영동군 사회적 고립 및 고독사 예방에 관한 조례안 입법예고</a></li>
                       </ul>
                     </div>
                     <div class="bt__lf" id="tabs-5">
                       <ul>
-                        <li>Lorem sitatibus minima aliquam similique vero eos harum repellendus sed animi dicta!</li>
+                        <li><a href="#">「2024년 산림소득분야(임산물) 지원사업」 수요조사 알림</a></li>
+                        <li><a href="#">2023년 영동군 청년면접 정장대여사업」시행 공고</a></li>
+                        <li><a href="#">2023년 개별농가 스마트농업 보급 지원사업 추진계획 및 신청접수 알림</a></li>
+                        <li><a href="#">2023년도 전략작물직불금 등록신청 공고</a></li>
+                        <li><a href="#">개정된 "주택임대차표준계약서" 서식 안내</a></li>
+                        <li><a href="#">용화면사무소 청사 CCTV 설치에 따른 행정예고</a></li>
                       </ul>
                     </div>
                   </div>
@@ -679,20 +680,18 @@
                 </div>
                 <div class="ct__right">
                   <div class="ct__rt">
-                    <strong>군정뉴스</strong>
-                    <div class="ani-x">+</div>
+                    <span>군정뉴스</span>
                   </div>
                   <div class="ct__rtimg"></div>
                   <div class="ct__text">
-                    <strong>영동군, 쾌적한 군민 생활환경 위한 선진 하수도시설 운영관리 눈길</strong>
+                    <span>선진 하수도시설 운영관리 눈길</span>
                     <p>충북 영동군이 선진 공공하수도시설 운영관리로 군민의 쾌적한 생활환경 조성</p>
-                    <span>2022.12.12</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="inner mt_30">
+          <div class="inner">
             <div class="quickmenu flex mt_30">
               <div class="quickmenu__logo"></div>
               <ul class="quickmenu__list">
@@ -739,16 +738,13 @@
               </div>
               <div class="program__banner mt_10">
                 <div class="program__no__button"></div>
-                <div class="program__button"><button>보건·의료</button></div>
+                <div class="program__button"><button class="program__button__hover">보건·의료</button></div>
                 <div class="program__button"><button>교육</button></div>
                 <div class="program__button"><button>복지</button></div>
                 <div class="program__button"><button>산업경제</button></div>
                 <div class="program__button"><button>농·축산업</button></div>
-                <div class="program__button"><button>재난·안전·민방위</button></div>
-                <div class="program__button"><button>환경·상하수도</button></div>
                 <div class="program__button"><button>교통</button></div>
                 <div class="program__button"><button>식품·위생</button></div>
-                <div class="program__button"><button>생활·체육시설</button></div>
                 <div class="program__button"><button>부동산</button></div>
               </div>
             </div>
@@ -781,7 +777,7 @@
                 </div>
                 <div class="program__lf-bottom">
                   <div class="lf-bottom_title"><span class="program__cl1">공지</span> 사항</div>
-                  <div class="bottom_title mt_10">
+                  <div class="bottom_title mt_20">
                     <ul>
                       <li><p>코로나19 백신 접종에 따른 이상반응 안내사항</li>
                       <li><p>코로나19 관련 국민행동수칙 안내사항</p></li>
@@ -842,7 +838,7 @@
                 <div class="program__rf-top">
                   <div class="rf-top_wrap">
                     <p><span>이달의</span> 당직병원약국</p>
-                    <div class="mt_20">현재 당직중인 병원 약국을 안내합니다.</div>
+                    <div class="mt_20">현재 당직병원약국을 안내합니다.</div>
                     <ul class="rf-top_bottom1">
                       <li>이달의 당직병원약국 정보가 없습니다.</li>
                     </ul>
@@ -853,7 +849,7 @@
                 <div class="program__rf-bottom">
                   <div class="rf-bottom_wrap">
                     <p><span>금주</span> 프로그램</p>
-                    <ul class="mt_20">
+                    <ul>
                       <li>고용안정과 재취업 지원 프로그램</li>
                       <li>경력 단절 예방 및 지원 프로그램</li>
                       <li>외국인 노동자와의 조화 프로그램</li>
@@ -874,7 +870,7 @@
         <div class="inner">
           <div class="logo__bottom inner">
             <div class="bottom-img bottom-img1">
-              <div class="mt_5">배너</div>
+              <div class="bottom-text mt_5">배너</div>
               <div>
                 <button class="logo_bt"><img src="images/left-vt.png" alt="왼쪽버튼"></button>
               </div>
@@ -922,14 +918,14 @@
               </div>
               <div class="footer__bottom">
                 <div>
-                  <address>
-                    (29140) 충청북도 YD군 YD읍 길거리 1
-                    <span>전화 : (043)6882-0080</span>
-                    <span>팩스 : (043)777-9999</span>
-                  </address>
+                    <p class="footer_address">
+                      (29140) 충청북도 YD군 YD읍 길거리 1
+                      <span>전화 : (043)6882-0080</span>
+                      <span>팩스 : (043)777-9999</span>
+                    </p>
                 </div>
-                <div>
-                  <p>COPYRIGHT (C) 2022 BY YEONGDONG-GUN. ALL RIGHT RESERVED.</p>
+                <div class="mt_10">
+                  <p class="footer_address">COPYRIGHT (C) 2022 BY YEONGDONG-GUN. ALL RIGHT RESERVED.</p>
                 </div>
               </div>
             </div>
@@ -937,12 +933,6 @@
               <div class="boxt">
                 <div class="fotter__right-img">
                   <p>"영동군로고"</p>
-                </div>
-                <div>
-                  <a href="https://validator.w3.org/check?uri=https://parkcheonju.github.io/project/"><img src="https://www3.org/Icons/valid-html401" alt="유효성검사"></a>
-                </div>
-                <div>
-                  <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://parkcheonju.github.io/project/"><imsrc="https://jigsaw.w3.org/css-validator/images/vcss" alt="유효성검사"></a>
                 </div>
               </div>
             </div>

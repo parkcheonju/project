@@ -5,10 +5,10 @@ $(document).ready(function(){
       captions:true,
       controls:true,
       auto:true,
-      nextText:'<i class="fa-solid fa-arrow-right"></i>',
-      prevText:'<i class="fa-solid fa-arrow-left"></i>',
+      nextText:'<i class="fa-sharp fa-solid fa-angle-right"></i>',
+      prevText:'<i class="fa-sharp fa-solid fa-angle-left"></i>',
       autoControls:true,
-      startText:'◼',
-      stopText:'▶',
+      startText:'<i class="fa-sharp fa-solid fa-play"></i>',
+      stopText:'<i class="fa-sharp fa-solid fa-stop"></i>',
     });
 });
