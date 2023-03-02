@@ -1630,7 +1630,7 @@ body {
 
 
 .rf-top_bottom1 {
-  padding-top: 20px;
+  padding: 20px 0 0 10px;
   font-size: 0.9rem;
   font-weight: 400;
   color: #4e4646;
@@ -1641,7 +1641,6 @@ body {
 }
 
 .rf-top_bottom1 li {
-  list-style: disc;
   position: absolute;
   margin-left: 20px;
   padding-top: 20px;
