@@ -133,6 +133,9 @@ body {
 .mt_10{
   margin-top: 10px;
 }
+.mt_20{
+  margin-top: 20px;
+}
 .mt_30{
   margin-top: 30px;
 }
@@ -1325,14 +1328,15 @@ body {
 }
 
 .prgram__lf_top-top {
-  padding: 10px;
+  text-align: center;
+  padding: 20px 0 0 0;
 }
 
 .lf_top-top {
   width: 100%;
   height: 100%;
   padding: 5px;
-  font-size: 23px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -1361,6 +1365,7 @@ body {
 }
 
 .prgram__lf_top-bottom {
+  margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -1399,6 +1404,7 @@ body {
 }
 
 .program__lf-bottom {
+  width: 100%;
   height: 38%;
   margin-top: 10px;
   border-radius: 10px;
@@ -1406,27 +1412,26 @@ body {
 }
 
 .lf-bottom_title {
-  display: block;
-  padding: 5px 0 5px 20px;
-  font-size: 21px;
+  padding: 25px 0 10px 0;
+  text-align: center;
+  font-size: 24px;
   font-weight: 700;
   color: #1e1e1e;
 }
 
-.bottom_title {
-  padding: 10px;
-  padding-left: 10px;
-}
-
-.bottom_title li {
+.bottom_title li{
   position: relative;
   display: block;
-  text-overflow: ellipsis;
   list-style: disc;
-  font-size: 13px;
+  font-size: 14px;
   color: #4e4b4b;
   width: 100%;
   padding: 0 50px 0 10px;
+  margin: 5px 0 5px 20px;
+}
+.bottom_title li p{
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .bottom_title li em {
@@ -1498,7 +1503,8 @@ body {
   align-content: center;
   justify-content: space-around;
   height: 30%;
-  font-size: 23px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .ct-bottom-nav {
@@ -1575,15 +1581,26 @@ body {
   height: 100%;
   padding: 10px;
   position: relative;
+  text-align: center;
 }
 
 .rf-top_wrap > p {
   font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
 }
 
 .rf-top_wrap > p > span {
   color: #0e799a;
 }
+
+.program__cl1{
+  color: #0e799a;
+}
+.program__cl2{
+  color: #cd2d65;
+}
+
 
 .rf-top_bottom1 {
   padding-top: 20px;
@@ -1618,12 +1635,24 @@ body {
 .rf-bottom_wrap {
   width: 100%;
   height: 100%;
-  padding: 10px;
   position: relative;
+}
+.rf-bottom_wrap > ul{
+  font-size: 14px;
+  color: #4e4b4b;
+  width: 100%;
+  padding: 0 50px 0 10px;
+  margin: 10px 0 5px 20px;
+}
+.rf-bottom_wrap > ul > li{
+  padding-top: 5px;
 }
 
 .rf-bottom_wrap > p {
+  text-align: center;
   font-size: 24px;
+  font-weight: 700;
+  margin-top: 15px;
 }
 
 .rf-bottom_wrap > p > span {
@@ -1641,7 +1670,7 @@ body {
   height: 100%;
   background-image: url(../images/danger.png);
   background-repeat: no-repeat;
-  background-position: 0px 171px;
+  background-position: 0px 142px;
 }
 
 .logo__wrap {
