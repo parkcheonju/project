@@ -167,6 +167,70 @@ header {
 content {
   position: relative;
 }
+
+/*===================*/
+.weather_box{
+  margin: 30px 0 0 20px;
+}
+.info {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px 0 50px;
+  border-right: 2px solid #b7b7b7;
+  text-align: center;
+}
+.ico {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: url(../images/weather_icon.png) no-repeat;
+  background-position: 0px; /* -40px단위로 바뀜 */
+}
+.date {
+  display: block;
+  color: red;
+  line-height: 1;
+  font-size: 12px;
+  font-weight: 700;
+}
+.temper {
+  display: block;
+  margin: 5px 0 0;
+  line-height: 1;
+  font-size: 21px;
+  font-weight: 700;
+  color: #232323;
+}
+.info_list {
+  display: flex;
+}
+.info2 {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  text-align: center;
+}
+.dust_title {
+  display: block;
+  color: black;
+  line-height: 1.1;
+  font-size: 13px;
+  font-weight: 700;
+}
+.dust {
+  display: block;
+  line-height: 0.7;
+  font-size: 15px;
+  font-weight: 700;
+  color: #232323;
+}
+
+
+/*===================*/
+
+
 .top-img {
   background-image: url(../images/main_bg.gif);
   background-repeat: no-repeat;
@@ -1795,6 +1859,7 @@ body {
 }
 
 .footer_wrap {
+  min-width: 1240px;
   height: 200px;
   background-color: #3d4049;
 }

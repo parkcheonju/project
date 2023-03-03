@@ -1,85 +1,85 @@
-const castBox = document.querySelector(".banner_weather");
-let statusText, rainIcon, locText;
-rainIcon = ['<i class="bi bi-brightness-high-fill"></i>', '<i class="bi bi-cloud-drizzle-fill"></i>', '<i class="bi bi-cloud-fog2-fill"></i>', '<i class="bi bi-lightning-fill"></i>', '<i class="bi bi-snow3"></i>'];
+// 일반인증키
+const API_KEY = "K2JXT%2BMu8GnZMyjRfzlGwrMautCkMFKvkv3nxDvP4xpHeexU5hftpnTrmY9IQH%2BhZ4nOxkJEHy2m5TtS8fyamQ%3D%3D";
 
-//getUltraSrtNcst 초단기 실황을 받아오는 파라미터 엑셀파일에 적혀있음
-//getUltraSrtFcst 단기예보
+let dust_num = 7;
+let today = new Date(); /* Mon Feb 20 2023 23:09:04 GMT+0900 (한국 표준시) */
+let year = today.getFullYear();
+let month = today.getMonth() + 1; //월은 0월부터시작해서 +1을 한 것.
+let date = today.getDate();
 
-let url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/";
+month = month >= 10 ? month : "0" + month; //한자리 월 앞에 0붙이기
+date = date >= 10 ? date : "0" + date; //한자리 월 앞에 0붙이기
 
-let params = {
-  type: ["getUltraSrtNcst", "getUltraSrtFcst"], //(초단기실황)(단기예보)
-  key: "qiUjWGNCMudOxBvHqxd3OdoLSVVc%2FPHL8EZQDmddny8Pmk3mjo20cqwwLaDIr6nbl3498ravmKRNBfzkEEY4xw%3D%3D",
-  pageNo: "1",
-  numOfRows: "1000",
-  dataType: "JSON",
-  base_date: now,
-  base_time: "0600",
-  nx: "55",
-  ny: "127",
-};
+let total_date = `${year}${month}${date}`; /* 날짜 api요청변수 value*/
+let total_date2 = `${year}.${month}.${date}`; /* 날짜 출력 */
 
-url = `${url}${params.type[0]}?serviceKey=${params.key}&pageNo=${params.pageNo}&numOfRows=${params.numOfRows}&dataType=${params.dataType}&base_date=${params.base_date}&base_time=${params.base_time}&nx=${params.nx}&ny=${params.ny}`;
+get_data2();
+get_data1();
 
-async function getPosts() {
-  const res = await fetch(url);
-  const data = await res.json();
-  return data;
+/* temperature */
+async function get_data1() {
+  const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?ServiceKey=${API_KEY}&pageNo=1&numOfRows=1000&dataType=json&base_date=${total_date}&base_time=0600&nx=59&ny=75`;
+  const response = await fetch(url);
+  data = await response.json();
+  console.log("data1", data);
+  temper_data(data);
 }
 
-async function setPosts() {
-  const posts = await getPosts();
-  const datas = posts.response.body.items.item;
+/* dust_value */
+async function get_data2() {
+  const url = `https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getCtprvnRltmMesureDnsty?serviceKey=${API_KEY}&numOfRows=100&pageNo=1&returnType=json&sidoName=%EA%B4%91%EC%A3%BC`;
+  const response = await fetch(url);
+  data = await response.json();
+  console.log("data2", data);
+  dust_data(data);
+}
 
-  //동적요소 생성
+document.querySelector(".date").innerText = `${total_date2}`;
 
-  const castEl = document.createElement("table");
-  castEl.classList.add("table");
-  const tr = document.createElement("tr");
-  let cast = {
-    baseDate: datas[0].baseDate,
-    rain: datas[0].obsrValue,
-    rainInfo: function () {
-      let info = this.rain + 2;
+function temper_data(data) {
+  let weather_value = data.response.body.items.item[0].obsrValue;
+  let target = document.querySelector(".ico");
 
-      if (info == 0) {
-        statusText = "맑음";
-        rainIcon = rainIcon[0];
-      } else if (info == 1) {
-        statusText = "비";
-        rainIcon = rainIcon[1];
-      } else if (info == 2) {
-        statusText = "비/눈";
-        rainIcon = rainIcon[2];
-      } else if (info == 3) {
-        statusText = "눈";
-        rainIcon = rainIcon[3];
-      }
-    },
-    temperature: datas[3].obsrValue,
-    wind: datas[5].obsrValue,
-    nx: datas[0].nx,
-    ny: datas[0].ny,
-    loc: function () {
-      let point = [this.nx, this.ny];
-      if (point[0] == 55 && point[1] == 127) {
-        locText = "영동군";
-      }
-    },
-  };
+  if (weather_value == 0) {
+    // weather = "맑음";
+    target.style.backgroundPosition = "0px";
+  } else if (weather_value === 1) {
+    // weather = "비";
+    target.style.backgroundPosition = "-160px";
+  } else if (weather_value === 2) {
+    // weather = "비/눈";
+    target.style.backgroundPosition = "-200px";
+  } else if (weather_value === 3) {
+    // weather = "눈";
+    target.style.backgroundPosition = "-240px";
+  } else if (weather_value === 4) {
+    // weather = "소나기";
+    target.style.backgroundPosition = "-160px";
+  } else {
+    // weather = "날씨 파악중";
+    target.style.backgroundPosition = "0px";
+  }
+  document.querySelector(".temper").innerText = `${data.response.body.items.item[3].obsrValue}℃`;
+}
 
-  cast.rainInfo();
-  cast.loc();
+function dust_data(data) {
+  let dust = data.response.body.items[dust_num].pm10Value;
+  let dust_grade;
 
-  tr.innerHTML = `
-  <tr>오늘날짜:${cast.baseDate}</tr><hr>
-  <tr>지역:${locText}</tr><hr>
-  <tr>강수형태:${statusText}${rainIcon}</tr><hr>
-  <tr>기온:${cast.temperature}</tr><hr>
-  <tr>바람:${cast.wind}</tr>
+  if (dust >= 0 && dust <= 15) {
+    dust_grade = "좋음";
+  } else if (dust >= 16 && dust <= 35) {
+    dust_grade = "보통";
+  } else if (dust >= 36 && dust <= 75) {
+    dust_grade = "나쁨";
+  } else if (dust >= 76) {
+    dust_grade = "매우나쁨";
+  } else {
+    dust_grade = "error";
+  }
+  /* 한국환경공단 실시간 대기오염 정보 에어코리아 */
+  /* ${data.response.body.items[7].dataTime} */
+  document.querySelector(".dust").innerText = `
+  ${dust}㎍/㎥(${dust_grade})
   `;
-
-  castEl.appendChild(tr);
-  castBox.appendChild(castEl);
 }
-setPosts();
