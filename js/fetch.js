@@ -21,7 +21,7 @@ async function get_data1() {
   const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?ServiceKey=${API_KEY}&pageNo=1&numOfRows=1000&dataType=json&base_date=${total_date}&base_time=0600&nx=59&ny=75`;
   const response = await fetch(url);
   data = await response.json();
-  console.log("data1", data);
+  //console.log("data1", data);
   temper_data(data);
 }
 
@@ -30,7 +30,7 @@ async function get_data2() {
   const url = `https://api.odcloud.kr/api/RltmArpltnInforInqireSvrc/v1/getCtprvnRltmMesureDnsty?serviceKey=${API_KEY}&numOfRows=100&pageNo=1&returnType=json&sidoName=%EA%B4%91%EC%A3%BC`;
   const response = await fetch(url);
   data = await response.json();
-  console.log("data2", data);
+  //console.log("data2", data);
   dust_data(data);
 }
 
