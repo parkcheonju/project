@@ -1,5 +1,5 @@
 # 영동군청
-> 개인 프로젝트 (기여도 100%)
+- 개인 프로젝트 (기여도 100%)
 > HTML, CSS, JS, jQeury 를 활용하여 관공서 "영동군청"을 제작해 보았습니다.
 > 구현화면 [_here_](https://parkcheonju.github.io/project/)
 
